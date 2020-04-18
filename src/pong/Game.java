@@ -90,6 +90,11 @@ public class Game extends Canvas implements Runnable, KeyListener {
         return dimension;
     }
 
+    @Override
+    public void keyTyped(KeyEvent e) {
+        
+    }
+
     /**
      * Evento de de tecla pressionada
      * @param keyEvent
