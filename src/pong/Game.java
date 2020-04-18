@@ -90,11 +90,10 @@ public class Game extends Canvas implements Runnable, KeyListener {
         return dimension;
     }
 
-    @Override
-    public void keyTyped(KeyEvent e) {
-
-    }
-
+    /**
+     * Evento de de tecla pressionada
+     * @param keyEvent
+     */
     @Override
     public void keyPressed(KeyEvent keyEvent) {
         if (keyEvent.getKeyCode() == KeyEvent.VK_RIGHT) {
@@ -105,6 +104,10 @@ public class Game extends Canvas implements Runnable, KeyListener {
         }
     }
 
+    /**
+     * Evento de de tecla solta
+     * @param keyEvent
+     */
     @Override
     public void keyReleased(KeyEvent keyEvent) {
         if (keyEvent.getKeyCode() == KeyEvent.VK_RIGHT) {
